@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="user.css">
+    <script type="module" src="user.js" defer></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container" ></div>
+         <div class="nav">
+            <h2 class="logo">بن طاهر للتجميل</h2>
+            <h2 class="main">الرئيسية</h2>
+            <h2 id="nav-pro">المنتجات</h2>
+            <h2 id="nav-about">مدونة</h2>
+            <h2 id="nav-contact">اتصل بي</h2>
+            <h2><i class="fa-solid fa-cart-shopping cart-button" ></i></h2>
+        </div>
+
+        <div class="icon">
+            <h4 class="logo2">بن طاهر للتجميل</h4>
+            <h3><i class="fa-solid fa-house" ></i></h3>
+            <h3><i class="fa-solid fa-shop" id="nav-pro"></i></h3>
+            <h3><i class="fa-solid fa-user" ></i></h3>
+            <h3><i class="fa-solid fa-envelope" id="nav-contact"></i></h3>
+            <h3><i class="fa-solid fa-cart-shopping cart-button" ></i></h3>
+        </div>
+        <div class="pasword">
+            <label for="">كلمة السر</label>
+            <input type="password" class="pasword-inp">
+            <button class="paswordbtn">enter</button>
+        </div>
+
+        <div class="admin">
+        <div class="upload-div">
+            <input type="text" id="nameInput" placeholder="اسم المنتج">
+            <input type="number" id="priceInput" placeholder=" ثمن المنتج">
+            <input type="text" id="descriptionInput" placeholder="وصف المنتج">
+            <input type="file" id="imageInput" placeholder="" multiple>
+            <button id="uploadBtn">Upload</button>
+        </div>
+        <table class="edit" border="1"></table>
+        <div class="edit-form" style="display: none;" >
+            <input id="edit-name" placeholder="Name">
+            <input id="edit-price" placeholder="Price">
+            <input id="edit-desc" placeholder="Description"></input>
+
+            <button id="save-edit">حفظ</button>
+        </form>
+        </div>
+
+</body>
+</html>
