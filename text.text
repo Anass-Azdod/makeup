@@ -1,0 +1,16 @@
+<table class="voice">
+        <div class="product-table">
+            <th>المنتج</th>
+        </div>
+        <div class="price-table">
+            <th>الثمن</th>
+        </div>
+        <div class="quantity-table">
+            <th>العدد</th>
+            <form action="" class="form-table"></form>
+
+        </div>
+        <div class="total-table">
+            <th>المجموع</th>
+        </div>
+    </table>
