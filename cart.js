@@ -150,7 +150,7 @@ whatsappBtn.addEventListener("click", () => {
     let message = "🛒 طلبي:\n\n"
     let grandtotal = arr.reduce((a, b) => a + (b || 0), 0)
     message += `اسم العميل: ${clientname.value}\n`
-    message += `مدينة العميل: ${clientcity.value}\n`
+    message += `مدينة العميل: ${clientcity.value}\n\n`
     if(clientname.value ==="" || clientcity.value ===""){
         alert("ادخل اسمك و مدينتك")
         return
@@ -159,10 +159,10 @@ whatsappBtn.addEventListener("click", () => {
         cart.forEach((item, index) => {
             let itemTotal = arr[index] || 0
             message += `المنتج: ${item.name}\n`
-            message += `الثمن: ${item.price} Dh\n\n`
-            message += `المجموع: ${itemTotal.toFixed(2)} Dh\n\n`
+            message += `الثمن: درهم ${item.price} \n\n`
+            message += `المجموع: درهم  ${itemTotal.toFixed(2)} \n\n`
         })
-        message += `المجموع: ${grandtotal.toFixed(2)} Dh`
+        message += `المجموع: درهم ${grandtotal.toFixed(2)} `
     
         let url = `https://wa.me/212696581803?text=${encodeURIComponent(message)}`
         window.open(url, "_blank")

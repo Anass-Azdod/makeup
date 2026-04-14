@@ -94,7 +94,7 @@ button{
     width: 220px;
 }
 #h2tag{
-    width: 190px;
+    width: 180px;
     overflow: hidden;
 }
 .product-img{
@@ -111,6 +111,7 @@ button{
     object-fit: cover;
 }
 .price{
+    font-weight: bolder;
     display: flex;
     justify-content: flex-end;
     padding-right: 1rem;
@@ -172,6 +173,10 @@ button{
         width: 100%;
         height: 100%;
         object-fit: cover;
+}
+    #h2tag{
+    width: 150px;
+    overflow: hidden;
 }
     .about-para{
         width: 300px;
